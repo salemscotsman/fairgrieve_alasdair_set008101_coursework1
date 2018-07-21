@@ -1,0 +1,148 @@
+<DOCTYPE html>
+
+<!--  Author: Alasdair Fairgrieve
+      Last Modified: 21-7-18
+      This is the HTML code for the caesar Cipher page. -->
+<html>
+  <head>
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+  </head>
+
+  <script src="caesar.js"></script>
+
+  <body>
+    <div class="titleBox">
+      <h1 class="titleText"> CAESAR CIPHER </h1>
+    </div>
+
+    <!-- Home Button -->
+    <div class="navButton">
+      <a href="index.html"><img src="images/home.png"
+        style="
+        height: 90px;
+        margin-left: 60px;
+        ">
+      </a>
+    </div>
+
+    <!-- Switch Cipher Button -->
+    <div class="navButton" style="top: 180px;">
+      <a href="caesarCipher.html">
+        <h3 class="subtitleText" style="line-height: 5px">Switch Cipher</h3>
+      </a>
+      <a href="rot13Cipher.html"><img src="images/switch.png"
+        style="
+        align-items: center;
+        width: 50px;
+        margin-left: 80px;
+        ">
+      </a>
+    </div>
+
+    <!-- Bottom Box -->
+    <div class="uiBox"
+     style="
+     margin-left: 700px;
+     margin-top: 250px;
+     width: 430px;
+     height: 300px;
+    ">
+      <p id="howToUseCaesar">
+      <b> • Enter your text in the top textbox.
+        <br>• Select a Key from the drop-down menu.
+        <br>• Hit the 'Encrypt' button.
+        <br>• Copy the output text for usage.
+        <br>• Paste encrypted message and use <br>'Decrypt' to reverse the process.
+      </b>
+      </p>
+
+      <div class="subtitleBox" style="
+      width: 380px;
+      left: 20px;
+      top: 20px;
+      height: 45px;
+      ">
+      <h2 class="titleText" style="
+      font-size: 45px;
+      line-height: 1px;
+      margin-top: 25px;
+      ">How To Use</h2>
+      </div>
+    </div>
+
+    <!-- Top Box -->
+    <div class="uiBox"
+     style="
+     margin-left: 700px;
+     top: 250px;
+     width: 430px;
+     height: 360px;
+    ">
+      <p id="howItWorksCaesar">
+        The Caesar cipher or Shift Cipher<br> works by substituting a given letter<br>
+        for a number relative to that letter's position in the alphabet. In this case<br>
+        A would become 0 and B to 1 and so forth. This number is then multiplied<br> by
+        the given 'Key' which similarly is a letter representing a number.
+      </p>
+
+      <div class="subtitleBox" style="
+      width: 380px;
+      left: 20px;
+      top: 20px;
+      height: 45px;
+      ">
+      <h2 class="titleText" style="
+      font-size: 45px;
+      line-height: 1px;
+      margin-top: 25px;
+      ">How It Works</h2>
+      </div>
+    </div>
+
+    <div class="backgroundBox"></div>
+
+    <select id="dropDown" name="letter">
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="g">G</option>
+        <option value="h">H</option>
+        <option value="i">I</option>
+        <option value="j">J</option>
+        <option value="k">K</option>
+        <option value="l">L</option>
+        <option value="m">M</option>
+        <option value="n">N</option>
+        <option value="o">O</option>
+        <option value="p">P</option>
+        <option value="q">Q</option>
+        <option value="r">R</option>
+        <option value="s">S</option>
+        <option value="t">T</option>
+        <option value="u">U</option>
+        <option value="v">V</option>
+        <option value="w">W</option>
+        <option value="x">X</option>
+        <option value="y">Y</option>
+        <option value="z">Z</option>
+      </select>
+
+      <div class="cipherBackgroundBox">
+      </div>
+
+    <button onclick="encrypt()" class="button">Encrypt</button>
+    <button onclick="decrypt()" class="button" style="margin-left: 750px;">Decrypt</button>
+
+    <input id ="output" type = "text" size ="20" placeholder="" spellcheck="false" class ="outputText">
+    <input id ="input" type ="text" size ="20" placeholder="Please enter text to cipher..." spellcheck="false" class="inputText">
+
+    <!--Textured background surface-->
+    <div class="backgroundBox">
+    </div>
+
+  </body>
+</html>

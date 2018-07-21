@@ -1,0 +1,222 @@
+/*  Author: Alasdair Fairgrieve
+    Last Modified: 21-7-18
+
+    This is the stylesheet which holds the CSS information
+    that will be used to style the webpage.
+*/
+
+
+/* Standalone dark background box */
+.backgroundBox
+{
+  background-color: #C0C0C0;
+  background-image: url('images/bgDark.png');
+  border: 3px solid #808080;
+  margin: 0 auto;
+  width: 70%;
+  height: 1000px;
+  position: relative;
+  box-shadow: 10px 10px 8px #808080,
+              -10px 10px 8px #808080;
+}
+
+/* Main titlebox */
+.titleBox
+{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #808080;
+  width: 50%;
+  left: 25%;
+  top: 3%;
+  height: 150px;
+  border: 3px dashed #C0C0C0;
+  z-index: 2000;
+
+}
+
+/*Style and positioning of subtitle div boxes*/
+.subtitleBox
+{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #808080;
+  width: 30%;
+  align-items: center;
+  left: 35%;
+  top: 20%;
+  height: 75px;
+  border: 3px dashed #C0C0C0;
+  z-index: 2000;
+}
+
+/*Text contained within subtitle div boxes*/
+.subtitleText
+{
+  font-family:"Helvetica";
+  text-align: center;
+  color: #000000;
+
+}
+
+/*div styling to contain cipher links and accentuate features*/
+.uiBox
+{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #808080;
+  width: 25%;
+  left: 20%;
+  top: 40%;
+  height: 550px;
+  border: 3px dashed #C0C0C0;
+  z-index: 2000;
+  box-shadow: 10px 10px 8px #808080,
+              -10px 10px 8px #808080;
+}
+
+/*Applies tiled background image*/
+body
+{
+  background-image: url(images/bg.png);
+}
+
+/*Text for main title*/
+.titleText
+{
+  text-align: center;
+  text-shadow: -4px -4px 0 #000000;
+  vertical-align: middle;
+  font-size: 60px;
+  line-height: 80px;
+  color: #fe4560;
+  font-family:"Helvetica";
+}
+
+/*Text used within paragraphs*/
+.boxtext
+{
+  font-family:"Helvetica";
+}
+
+/*Text used to title cipher div boxes*/
+.cipherText
+{
+  text-align: center;
+  text-shadow: -4px -4px 0 #000000;
+  vertical-align: middle;
+  font-size: 50px;
+  line-height: 30px;
+  color: #fe4560;
+  font-family:"Helvetica";
+}
+
+/*Style used for div background of cipher interface*/
+.cipherBackgroundBox
+{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #808080;
+  width: 35%;
+  left: 20%;
+  top: 250px;
+  height: 700px;
+  border: 3px dashed #C0C0C0;
+  z-index: 2000;
+}
+
+/*Style and parameters for home button*/
+.navButton
+{
+  position: absolute;
+  margin: 0 auto;
+  background-color: #808080;
+  width: 220px;
+  height: 100px;
+  left: 25px;
+  top: 50px;
+  border: 3px dashed #C0C0C0;
+}
+
+/*Style and parameter used for cipher ui buttons*/
+.button
+{
+  width: 150px;
+  height: 50px;
+  margin-left: 500px;
+  top: 580px;
+  z-index: 2000;
+  position: absolute;
+}
+
+/*Style and parameter used for input text box*/
+.inputText
+{
+  width: 640px;
+  height: 300px;
+  top: 270px;
+  margin-left: 390px;
+  z-index: 2000;
+  position: absolute;
+}
+
+/*Style and parameter used for output text box*/
+.outputText
+{
+  width: 640px;
+  height: 300px;
+  top: 640px;
+  margin-left: 390px;
+  z-index: 2000;
+  position: absolute;
+}
+
+/*ID used for sizing dropdown menu*/
+#dropDown
+{
+  margin-left: 660px;
+  top: 600px;
+  position: absolute;
+  width: 80px;
+  z-index: 3000;
+}
+
+/*ID used for formatting descriptive text*/
+#howToUseRot13
+{
+  position: relative;
+  font-family: "Helvetica";
+  font-size: 20px;
+  top: 30%;
+  left: 5%;
+}
+
+/*ID used for formatting descriptive text*/
+#howItWorksCaesar
+{
+  position: relative;
+  font-family: "Helvetica";
+  font-size: 24px;
+  top: 20%;
+  left: 5%;
+}
+
+/*ID used for formatting instructive text*/
+#howItWorksRot13
+{
+  position: relative;
+  font-family: "Helvetica";
+  font-size: 24px;
+  top: 30%;
+  left: 5%;
+}
+
+/*ID used for formatting instructive text*/
+#howToUseCaesar
+{
+  position: relative;
+  font-family: "Helvetica";
+  font-size: 20px;
+  top: 30%;
+  left: 5%;
+}

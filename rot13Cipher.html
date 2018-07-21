@@ -1,0 +1,117 @@
+<DOCTYPE html>
+
+<!--  Author: Alasdair Fairgrieve
+      Last Modified: 21-7-18
+      This is the HTML code for the Caeser Cipher page. -->
+<html>
+
+  <head>
+    <title>Rot13 Cipher</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+  </head>
+
+  <body>
+
+    <script src="rot13.js"></script>
+
+    <div class="titleBox">
+      <h1 class="titleText"> ROT13 CIPHER </h1>
+    </div>
+
+    <div class="cipherBackgroundBox">
+    </div>
+
+    <!-- Home Button -->
+    <div class="navButton">
+      <a href="index.html"><img src="images/home.png"
+        style="
+        height: 90px;
+        margin-left: 60px;
+        ">
+      </a>
+    </div>
+
+    <!-- Switch Cipher Button -->
+    <div class="navButton" style="top: 180px;">
+      <a href="caesarCipher.html">
+        <h3 class="subtitleText" style="line-height: 5px">Switch Cipher</h3>
+      </a>
+      <a href="caesarCipher.html"><img src="images/switch.png"
+        style="
+        align-items: center;
+        width: 50px;
+        margin-left: 80px;
+        ">
+      </a>
+    </div>
+
+    <!-- Bottom Box -->
+    <div class="uiBox"
+     style="
+     margin-left: 700px;
+     margin-top: 250px;
+     width: 430px;
+     height: 305px;
+    ">
+
+    <p id="howToUseRot13">
+    <b>   • Enter your text in the top box.
+      <br>• Hit the 'Encrypt' button.
+      <br>• Copy the output text for usage.
+      <br>• Paste encrypted message and use <br>'Decrypt' to reverse the process.
+    </b>
+    </p>
+
+      <div class="subtitleBox" style="
+      width: 380px;
+      left: 20px;
+      top: 20px;
+      height: 45px;
+      ">
+      <h2 class="titleText" style="
+      font-size: 45px;
+      line-height: 1px;
+      margin-top: 25px;
+      ">How To Use</h2>
+      </div>
+    </div>
+
+    <!-- Top Box -->
+    <div class="uiBox"
+     style="
+     margin-left: 700px;
+     top: 250px;
+     width: 430px;
+     height: 360px;
+    ">
+
+      <p id="howItWorksRot13">
+        The Rot13 Cipher works by simply replacing the letter provided
+        with another letter 13 places along in the alphabet. It also
+        returns to the <br> beginning of the alphabet should it <br>need to.
+
+      <div class="subtitleBox" style="
+      width: 380px;
+      left: 20px;
+      top: 20px;
+      height: 45px;
+      ">
+      <h2 class="titleText" style="
+      font-size: 45px;
+      line-height: 1px;
+      margin-top: 25px;
+      ">How It Works</h2>
+      </div>
+    </div>
+
+    <!--Textured background surface-->
+    <div class="backgroundBox"></div>
+
+    <button onclick="encrypt()" class="button">Encrypt</button>
+    <button onclick="decrypt()" class="button" style="margin-left: 750px;">Decrypt</button>
+
+    <input id ="output" type = "text" size ="20" placeholder="" spellcheck="false" class ="outputText">
+    <input id ="input" type ="text" size ="20" placeholder="Please enter text to cipher..." spellcheck="false" class="inputText">
+
+  </body>
+</html>
